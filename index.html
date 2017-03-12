@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Picture Slider</title>
+	<link rel="stylesheet" type="text/css" href="public/css/app.css">
+	<style type="text/css">
+		body{
+			width: 100%;
+			display: flex;
+			flex-direction:column;
+		}
+	</style>
+</head>
+
+
+<body>
+
+<div  style="width:500px; height:282px; margin:auto;">
+	<img id="autoSlider"  src="910a486057eb9a885d3b1e2c208bbe07.jpeg">
+</div>
+<button id="moveup" style="padding: 15px; max-width: 100px; margin: auto; width: auto;">Click Me</button>
+
+<script type="text/javascript" src="public/js/app.js"></script>
+
+<script type="text/javascript">
+
+    $('#autoSlider').autoSlider({
+        auto : true,
+        activateBtn : '#moveup',
+        closeBtnShow: true,
+        closeBtnWord: "Close",
+        closeBtnColor: "white",
+        closeBtnSize: "20px",
+        sliderTimer: "2s"
+    });
+
+</script>
+</body>
+
+</html>
